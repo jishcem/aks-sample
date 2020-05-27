@@ -35,5 +35,11 @@ namespace AksDotnetCore.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("how-you-doing")]
+        public IActionResult SayMyName()
+        {
+            return Ok("How you doing ?");
+        }
     }
 }
